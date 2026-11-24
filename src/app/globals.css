@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #111111;
+  --secondary: #191919;
+  --card: #22201D;
+  --accent: #C99A55;
+  --accent-light: #E5BD82;
+  --text-main: #F5F0E8;
+  --text-muted: #A9A29A;
+  --border-color: rgba(255, 255, 255, 0.10);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #111111;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #111111;
+  color: #F5F0E8;
+  overflow-x: hidden;
+  font-family: var(--font-manrope), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #C99A55;
+  color: #111111;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b2722;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C99A55;
+}
+
+/* Luxury Utility Classes */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #F5F0E8 20%, #E5BD82 60%, #C99A55 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-accent {
+  background: linear-gradient(135deg, #C99A55 0%, #E5BD82 100%);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, rgba(201, 154, 85, 0.4), rgba(229, 189, 130, 0.1)) 1;
+}
+
+.luxury-glass {
+  background: rgba(17, 17, 17, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.luxury-card-glass {
+  background: rgba(34, 32, 29, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.editorial-eyebrow {
+  letter-spacing: 0.28em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #C99A55;
+  font-weight: 500;
+}
+
+.vignette {
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.85);
+}
+
+/* Subtle Film Grain Overlay */
+.grain-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
